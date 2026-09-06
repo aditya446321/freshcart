@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {"colors": {"surface-container-high": "#e6e8ea", "secondary-fixed-dim": "#ffb95f", "outline-variant": "#bdcaba", "error": "#ba1a1a", "surface-bright": "#f7f9fb", "primary-fixed": "#7ffc97", "background": "#f7f9fb", "surface-container": "#eceef0", "on-secondary-container": "#684000", "tertiary-fixed": "#ffd9de", "inverse-surface": "#2d3133", "secondary-fixed": "#ffddb8", "primary-container": "#00873a", "secondary-container": "#fea619", "on-tertiary-fixed-variant": "#8a143c", "tertiary": "#a72d51", "surface-dim": "#d8dadc", "surface": "#f7f9fb", "surface-variant": "#e0e3e5", "on-surface": "#191c1e", "on-background": "#191c1e", "surface-tint": "#006e2d", "on-secondary": "#ffffff", "error-container": "#ffdad6", "on-primary": "#ffffff", "surface-container-low": "#f2f4f6", "secondary": "#855300", "outline": "#6e7b6c", "on-error": "#ffffff", "inverse-on-surface": "#eff1f3", "on-secondary-fixed-variant": "#653e00", "tertiary-container": "#c74668", "on-error-container": "#93000a", "on-tertiary": "#ffffff", "surface-container-highest": "#e0e3e5", "primary": "#006b2c", "on-tertiary-container": "#fffbff", "on-tertiary-fixed": "#3f0016", "on-surface-variant": "#3e4a3d", "on-secondary-fixed": "#2a1700", "inverse-primary": "#62df7d", "on-primary-fixed": "#002109", "on-primary-container": "#f7fff2", "on-primary-fixed-variant": "#005320", "primary-fixed-dim": "#62df7d", "surface-container-lowest": "#ffffff"}, "borderRadius": {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"}, "spacing": {"unit-6": "24px", "gutter-mobile": "12px", "margin-mobile": "16px", "unit-4": "16px", "unit-1": "4px", "gutter-desktop": "24px", "layout-max-width": "1280px", "unit-8": "32px", "unit-2": "8px", "gutter-tablet": "16px", "margin-desktop": "32px", "unit-3": "12px"}, "fontFamily": {"body-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"]}, "fontSize": {"body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700"}], "label-lg": ["14px", {"lineHeight": "20px", "fontWeight": "600"}], "label-sm": ["10px", {"lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "700"}], "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "body-sm": ["12px", {"lineHeight": "16px", "fontWeight": "400"}], "label-md": ["12px", {"lineHeight": "16px", "fontWeight": "600"}], "headline-sm": ["18px", {"lineHeight": "24px", "fontWeight": "600"}]}}}};</script><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/80 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-unit-3"><button class="w-10 h-10 flex items-center justify-center text-on-surface" onclick="history.back()"><span class="material-symbols-outlined">arrow_back_ios_new</span></button><img alt="BasketFresh Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVz4dmd6noM9kyiJt31krvOav7rrCm-mQ4gE4Osez7eUpR6KN4UVRrv8J6-kU3meM4x3-z78LwZ7TljHPlLE-XWNt6hY4wGy_eav20ieOGOrtPW0LfsHl80uJuVB9A0GBKs6JvFTyG5q-TocI5hBq_OagMvPtV0qO2k0lZYu2MYmZ15FPHxOIi-XNuTzf5RDo3nZXdsawsSi034AnETMIzbxD9LOUh6up7y8nacdz6c0-_eWEx8k1lzw"/></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="flex flex-col relative w-full px-margin-mobile pt-16 pb-safe bg-surface flex-grow"><div class="flex flex-col w-full max-w-layout-max-width mx-auto gap-unit-6 pb-20">
+<!-- Top Page Header & Actions -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-unit-4 bg-surface-container-lowest p-unit-6 rounded-xl shadow-sm">
+<div class="flex flex-col gap-unit-1">
+<div class="flex items-center gap-unit-2">
+<span class="text-label-sm font-label-sm text-primary uppercase tracking-wider bg-primary-fixed/20 px-2 py-0.5 rounded">Order Fulfillment</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">ID: #BF-9421</span>
+</div>
+<h1 class="text-headline-lg font-headline-lg text-on-surface flex items-center gap-unit-3">
+        Order #BF-9421
+        <span class="relative inline-block">
+<button class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-label-md font-label-md bg-secondary-container text-on-secondary-container shadow-sm transition hover:opacity-90" id="statusDropdownBtn" onclick="toggleStatusDropdown()">
+<span class="w-2 h-2 rounded-full bg-on-secondary-container animate-pulse"></span>
+<span id="currentStatusText">Preparing</span>
+<span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+<!-- Dropdown Menu -->
+<div class="hidden absolute left-0 mt-2 w-48 bg-surface-container-lowest rounded-xl shadow-xl z-50 overflow-hidden flex flex-col py-1" id="statusDropdown">
+<button class="text-left px-4 py-2 text-body-md font-body-md hover:bg-surface-container-low" onclick="setStatus('Confirmed')">Confirmed</button>
+<button class="text-left px-4 py-2 text-body-md font-body-md hover:bg-surface-container-low font-bold text-primary" onclick="setStatus('Preparing')">Preparing</button>
+<button class="text-left px-4 py-2 text-body-md font-body-md hover:bg-surface-container-low" onclick="setStatus('Packed')">Packed</button>
+<button class="text-left px-4 py-2 text-body-md font-body-md hover:bg-surface-container-low" onclick="setStatus(\'Out for Delivery\')">Out for Delivery</button>
+<button class="text-left px-4 py-2 text-body-md font-body-md hover:bg-surface-container-low" onclick="setStatus('Delivered')">Delivered</button>
+<button class="text-left px-4 py-2 text-body-md font-body-md hover:bg-surface-container-low text-error" onclick="setStatus('Cancelled')">Cancelled</button>
+</div>
+</span>
+</h1>
+<p class="text-body-md font-body-md text-on-surface-variant">Placed on Oct 24, 2023 at 09:42 AM • Express Delivery Slot (10:00 AM - 11:00 AM)</p>
+</div>
+<!-- Top Action Buttons -->
+<div class="flex items-center gap-unit-3 flex-wrap">
+<button class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg text-label-md font-label-md bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition" onclick="triggerAction('Print Invoice')">
+<span class="material-symbols-outlined text-[18px]">print</span>
+        Print Invoice
+      </button>
+<button class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg text-label-md font-label-md bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition" onclick="triggerAction('Export PDF')">
+<span class="material-symbols-outlined text-[18px]">download</span>
+        Export PDF
+      </button>
+<button class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg text-label-md font-label-md bg-primary text-on-primary hover:opacity-95 shadow-sm transition" onclick="triggerAction('Status Updated Successfully')">
+<span class="material-symbols-outlined text-[18px]">save</span>
+        Update Status
+      </button>
+</div>
+</div>
+<!-- Main Two-Column Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-unit-6">
+<!-- Left Column: Items, Breakdown, Delivery Info -->
+<div class="lg:col-span-8 flex flex-col gap-unit-6">
+<!-- Order Items Card -->
+<div class="bg-surface-container-lowest rounded-xl p-unit-6 shadow-sm flex flex-col gap-unit-4">
+<div class="flex items-center justify-between">
+<h2 class="text-headline-sm font-headline-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">shopping_basket</span>
+            Order Items (4 items)
+          </h2>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Fulfillment Status: 3/4 Scanned</span>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-surface-container-high text-label-md font-label-md text-on-surface-variant">
+<th class="py-3 px-2">Product</th>
+<th class="py-3 px-2">SKU</th>
+<th class="py-3 px-2 text-center">Qty</th>
+<th class="py-3 px-2 text-right">Unit Price</th>
+<th class="py-3 px-2 text-right">Discount</th>
+<th class="py-3 px-2 text-right">Total</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high text-body-md font-body-md">
+<!-- Item 1 -->
+<tr class="hover:bg-surface-container-low transition">
+<td class="py-3 px-2 flex items-center gap-3">
+<img class="w-12 h-12 object-cover rounded-lg shadow-sm flex-shrink-0" data-alt="Fresh organic Hass avocados arranged neatly on a light neutral background, bright natural lighting, crisp retail e-commerce style photography with vibrant green tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCElWrNef1QYkYSCWrUwuXqAftGuJWXQ7ifGAp3t8OYw3kKRBFiN5BiBBYsOm7PgIqOW4Qq50oaqW-HeY8SR8GZTigkIeofw6OQB7t5NF2l5zsHuH57k1i8QPoWu6VkNasLWdxvC9jmSFxmP6fiUUV2ecMrZT5Azz_fw_ienVpA8ZPn19Jhn4OJSr_jC_HqBzUGsWCojH86UpIw9bQ438_cZSwEWZ2ggrVk_fOy5hqI32QiSmUbF-4LFA"/>
+<div>
+<p class="font-bold text-on-surface">Organic Hass Avocado</p>
+<span class="text-body-sm text-on-surface-variant">1 pack (4 pcs)</span>
+</div>
+</td>
+<td class="py-3 px-2 text-on-surface-variant text-body-sm font-mono">BF-AVO-01</td>
+<td class="py-3 px-2 text-center font-bold">2</td>
+<td class="py-3 px-2 text-right">₹249.00</td>
+<td class="py-3 px-2 text-right text-primary">-₹20.00</td>
+<td class="py-3 px-2 text-right font-bold">₹478.00</td>
+</tr>
+<!-- Item 2 -->
+<tr class="hover:bg-surface-container-low transition">
+<td class="py-3 px-2 flex items-center gap-3">
+<img class="w-12 h-12 object-cover rounded-lg shadow-sm flex-shrink-0" data-alt="Fresh crisp red apples stacked neatly with glossy finish, bright daylight studio shot, minimalist grocery aesthetic with rich red and green hues." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1T8yqkyoIjEln7gIyEXp5AYv5cI4ZENYsI1jBar1xIEoXUSHThXh9ZUtDougO5Cq5rhxudkT2Ucg0SSNRWfQyIlddcHA8_lVXva29wQtC8ZTPn7Jh-lhq_0Ho2E37lNeWCH-id1AJCnl1jcwoGieSZMn-NUBHZzZ1XyjxTJOWC0FegjEZ5q9tPwI9tjtpKa2jFlKa7xz-2vtVAo1ad73g9jsKFauOJnCa5gbMZ0gw99cILcskMbowtw"/>
+<div>
+<p class="font-bold text-on-surface">Shimla Royal Apples</p>
+<span class="text-body-sm text-on-surface-variant">1 kg</span>
+</div>
+</td>
+<td class="py-3 px-2 text-on-surface-variant text-body-sm font-mono">BF-FRU-09</td>
+<td class="py-3 px-2 text-center font-bold">1</td>
+<td class="py-3 px-2 text-right">₹180.00</td>
+<td class="py-3 px-2 text-right text-primary">₹0.00</td>
+<td class="py-3 px-2 text-right font-bold">₹180.00</td>
+</tr>
+<!-- Item 3 -->
+<tr class="hover:bg-surface-container-low transition">
+<td class="py-3 px-2 flex items-center gap-3">
+<img class="w-12 h-12 object-cover rounded-lg shadow-sm flex-shrink-0" data-alt="Fresh organic farm potatoes piled with gentle earthy textures, warm sunlit market setting, professional clean retail product imagery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhYqHcqGbIQMe1DOQA91DTd-eYTFpcAk1mHcuJhRIb6rSgVdNNqRn1DAoHOCWkc1IMS0FuLJUcJqhsuV54swxw0XkWxtctZhGm5duf2WhfGiCZbeDumkHrre9Kv2jqy4SJoC3MaAYg3_mGY4puYzRZ5mfbW9Mv-Po7R1fd2e2bFTSpkTX23E-04raRvNfW2R_SF1zqnqAipt0aVX64qC8no0qo4ZlLItUz4U-QWkS4T9hQDNK1mezcxA"/>
+<div>
+<p class="font-bold text-on-surface">Fresh Farm Potatoes</p>
+<span class="text-body-sm text-on-surface-variant">2 kg</span>
+</div>
+</td>
+<td class="py-3 px-2 text-on-surface-variant text-body-sm font-mono">BF-VEG-42</td>
+<td class="py-3 px-2 text-center font-bold">1</td>
+<td class="py-3 px-2 text-right">₹75.00</td>
+<td class="py-3 px-2 text-right text-primary">-₹5.00</td>
+<td class="py-3 px-2 text-right font-bold">₹70.00</td>
+</tr>
+<!-- Item 4 -->
+<tr class="hover:bg-surface-container-low transition">
+<td class="py-3 px-2 flex items-center gap-3">
+<img class="w-12 h-12 object-cover rounded-lg shadow-sm flex-shrink-0" data-alt="Artisan sourdough bread loaf sliced with golden rustic crust, cozy bakery setting, elegant minimalist food photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhFFHauWcv-vhPEjlnuMtIJhFN3lwTGKTWS1fmRJx7ZlPgbM8Ai6WDEnJwrA_4ljynYzaAstiIByKsEJ2bHBiV3xVgsI6Q3XjYDiPwWg78nPrJDAi3NPhazlwstvVAtOgY9GTKO5iwCmw3PxCOEJCqKghkctCWWPjS5-8SyLAOUgiCFCpDnl1tub8gJAtXlRIuzgHyzDTZBhOadK1h_I4Ql_Pr5cm3mF5q-ohIiApQRVu8NqN-olhkhA"/>
+<div>
+<p class="font-bold text-on-surface">Artisan Sourdough Bread</p>
+<span class="text-body-sm text-on-surface-variant">400g loaf</span>
+</div>
+</td>
+<td class="py-3 px-2 text-on-surface-variant text-body-sm font-mono">BF-BAK-12</td>
+<td class="py-3 px-2 text-center font-bold">1</td>
+<td class="py-3 px-2 text-right">₹140.00</td>
+<td class="py-3 px-2 text-right text-primary">₹0.00</td>
+<td class="py-3 px-2 text-right font-bold">₹140.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Price Breakdown & Delivery Logistics Row -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-unit-6">
+<!-- Price Breakdown Card -->
+<div class="bg-surface-container-lowest rounded-xl p-unit-6 shadow-sm flex flex-col justify-between">
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">receipt_long</span>
+            Price Breakdown
+          </h3>
+<div class="flex flex-col gap-3 text-body-md font-body-md">
+<div class="flex justify-between text-on-surface-variant">
+<span>Subtotal</span>
+<span class="font-medium text-on-surface">₹644.00</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Item Discounts</span>
+<span class="font-medium text-primary">-₹25.00</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Delivery Fee</span>
+<span class="font-medium text-on-surface">₹49.00</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Taxes &amp; GST (Included)</span>
+<span class="font-medium text-on-surface">₹32.50</span>
+</div>
+<div class="border-t border-surface-container-high pt-3 flex justify-between items-center">
+<span class="text-headline-sm font-headline-sm text-on-surface">Grand Total</span>
+<span class="text-headline-md font-headline-md text-primary">₹698.00</span>
+</div>
+</div>
+<div class="mt-4 pt-3 bg-primary-fixed/10 px-3 py-2 rounded-lg flex items-center gap-2 text-body-sm font-body-sm text-on-primary-fixed-variant">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+            Payment Status: Paid via UPI (GooglePay - Success)
+          </div>
+</div>
+<!-- Delivery Information Card -->
+<div class="bg-surface-container-lowest rounded-xl p-unit-6 shadow-sm flex flex-col justify-between">
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">local_shipping</span>
+              Delivery Logistics
+            </h3>
+<div class="flex flex-col gap-3 text-body-md font-body-md">
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Assigned Rider</span>
+<span class="font-bold text-on-surface flex items-center gap-1.5">
+<span class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-xs">RK</span>
+                  Ramesh Kumar (+91 98211 44556)
+                </span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Delivery Zone</span>
+<span class="font-medium text-on-surface bg-surface-container-low px-2 py-1 rounded">Zone 4 - Indiranagar Hub</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Assigned Slot</span>
+<span class="font-medium text-on-surface">10:00 AM - 11:00 AM</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Expected Dispatch</span>
+<span class="font-medium text-primary">09:55 AM Today</span>
+</div>
+</div>
+</div>
+<button class="mt-4 w-full py-2 bg-surface-container-high hover:bg-surface-container-highest text-on-surface text-label-md font-label-md rounded-lg transition" onclick="triggerAction('Reassign Rider')">
+            Change / Reassign Rider
+          </button>
+</div>
+</div>
+</div>
+<!-- Right Column: Customer Info, Address, Timeline, Notes -->
+<div class="lg:col-span-4 flex flex-col gap-unit-6">
+<!-- Customer Information Card -->
+<div class="bg-surface-container-lowest rounded-xl p-unit-6 shadow-sm flex flex-col gap-unit-4">
+<h3 class="text-headline-sm font-headline-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">account_circle</span>
+          Customer Profile
+        </h3>
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-primary text-on-primary font-bold flex items-center justify-center text-lg shadow-sm">
+            AS
+          </div>
+<div>
+<p class="font-bold text-on-surface text-body-lg">Aarav Sharma</p>
+<span class="text-body-sm text-on-surface-variant">aarav.sharma@example.com</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-3 pt-2 border-t border-surface-container-high text-body-md font-body-md">
+<div class="bg-surface-container-low p-3 rounded-lg flex flex-col">
+<span class="text-body-sm text-on-surface-variant">Lifetime Spend</span>
+<span class="font-bold text-primary text-headline-sm">₹24,850</span>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg flex flex-col">
+<span class="text-body-sm text-on-surface-variant">Total Orders</span>
+<span class="font-bold text-on-surface text-headline-sm">38</span>
+</div>
+</div>
+<div class="flex items-center gap-2 text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">call</span>
+          +91 98765 43210 (Verified)
+        </div>
+</div>
+<!-- Delivery Address Card -->
+<div class="bg-surface-container-lowest rounded-xl p-unit-6 shadow-sm flex flex-col gap-unit-4">
+<h3 class="text-headline-sm font-headline-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">location_on</span>
+          Delivery Address
+        </h3>
+<div class="text-body-md font-body-md text-on-surface leading-relaxed">
+<p class="font-bold">Aarav Sharma (Flat 402, Block B)</p>
+<p class="text-on-surface-variant mt-1">Greenwood Apartment Complex, 100ft Road, Indiranagar, Bengaluru, Karnataka - 560038</p>
+</div>
+<div class="w-full h-32 rounded-lg bg-cover bg-center shadow-inner flex items-end p-2" data-location="Indiranagar, Bengaluru" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAa1Rj_EqiWe_fc9TKyHzcXX2CYfJFVsaqgiMIAYYLRA0LAxgKiJJZBksghv6od-msKCDw3oBtEZ7iXDrZgduU1tbcNtqa0-MqNpWLP9kxol2u5p6qtb1e3zACYrmVxelFGJS75Wc-1uiWT04bR25RbFu4YRLQrniq4Wwbd6AIvOO89_lXKhiGCPCoYGPaC-wR3WKLC_mdbMiE3zlW7pT-7lsy2sMg2PQnbgdpNgAX3b2cQ-GwV2MePJg')">
+<span class="bg-surface/90 backdrop-blur-md px-2 py-1 rounded text-body-sm font-body-sm text-on-surface shadow">📍 Pinned Location Verified</span>
+</div>
+</div>
+<!-- Order Timeline Card -->
+<div class="bg-surface-container-lowest rounded-xl p-unit-6 shadow-sm flex flex-col gap-unit-4">
+<h3 class="text-headline-sm font-headline-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">timeline</span>
+          Order Timeline
+        </h3>
+<div class="relative pl-6 space-y-6 before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-container-high">
+<!-- Step 1 -->
+<div class="relative">
+<span class="absolute -left-6 top-0 w-4 h-4 rounded-full bg-primary ring-4 ring-surface-container-lowest"></span>
+<p class="text-label-md font-label-md text-on-surface">Order Placed</p>
+<span class="text-body-sm text-on-surface-variant">Oct 24, 09:42 AM • Web App</span>
+</div>
+<!-- Step 2 -->
+<div class="relative">
+<span class="absolute -left-6 top-0 w-4 h-4 rounded-full bg-primary ring-4 ring-surface-container-lowest"></span>
+<p class="text-label-md font-label-md text-on-surface">Payment Confirmed</p>
+<span class="text-body-sm text-on-surface-variant">Oct 24, 09:43 AM • UPI Gateway</span>
+</div>
+<!-- Step 3 -->
+<div class="relative">
+<span class="absolute -left-6 top-0 w-4 h-4 rounded-full bg-secondary-container ring-4 ring-surface-container-lowest animate-pulse"></span>
+<p class="text-label-md font-label-md text-on-surface font-bold text-secondary">Preparing in Warehouse</p>
+<span class="text-body-sm text-on-surface-variant">Oct 24, 09:45 AM • Picker: Rajesh</span>
+</div>
+<!-- Step 4 -->
+<div class="relative opacity-60">
+<span class="absolute -left-6 top-0 w-4 h-4 rounded-full bg-surface-container-high ring-4 ring-surface-container-lowest"></span>
+<p class="text-label-md font-label-md text-on-surface">Out for Delivery</p>
+<span class="text-body-sm text-on-surface-variant">Pending Dispatch</span>
+</div>
+</div>
+</div>
+<!-- Admin Internal Notes Section -->
+<div class="bg-surface-container-lowest rounded-xl p-unit-6 shadow-sm flex flex-col gap-unit-4">
+<h3 class="text-headline-sm font-headline-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">sticky_note_2</span>
+          Internal Admin Notes
+        </h3>
+<div class="flex flex-col gap-2 max-h-48 overflow-y-auto pr-1" id="notesContainer">
+<div class="bg-surface-container-low p-3 rounded-lg text-body-sm">
+<div class="flex justify-between text-on-surface-variant mb-1">
+<span class="font-bold text-on-surface">Support Agent (Neha)</span>
+<span>10:15 AM</span>
+</div>
+<p>Customer requested to ring doorbell gently due to sleeping toddler.</p>
+</div>
+</div>
+<div class="flex flex-col gap-2 pt-2">
+<textarea class="w-full p-3 rounded-lg bg-surface-container-low text-body-md text-on-surface border border-outline-variant/30 focus:outline-none focus:border-primary resize-none" id="newNoteInput" placeholder="Add an internal note for pickers, packers or support..." rows="2"></textarea>
+<button class="self-end px-4 py-2 bg-primary text-on-primary text-label-md font-label-md rounded-lg hover:opacity-95 transition" onclick="addNote()">
+            Add Note
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Client-side Interactive Script -->
+<script>
+    function toggleStatusDropdown() {
+      const dropdown = document.getElementById('statusDropdown');
+      dropdown.classList.toggle('hidden');
+    }
+
+    function setStatus(statusName) {
+      document.getElementById('currentStatusText').innerText = statusName;
+      document.getElementById('statusDropdown').classList.add('hidden');
+      triggerAction('Status changed to ' + statusName);
+    }
+
+    function addNote() {
+      const input = document.getElementById('newNoteInput');
+      const text = input.value.trim();
+      if(!text) return;
+
+      const container = document.getElementById('notesContainer');
+      const noteEl = document.createElement('div');
+      noteEl.className = 'bg-surface-container-low p-3 rounded-lg text-body-sm animate-fadeIn';
+      noteEl.innerHTML = `
+        <div class="flex justify-between text-on-surface-variant mb-1">
+          <span class="font-bold text-on-surface">Admin (You)</span>
+          <span>Just now</span>
+        </div>
+        <p>${text}</p>
+      `;
+      container.prepend(noteEl);
+      input.value = '';
+    }
+
+    function triggerAction(actionName) {
+      const toast = document.createElement('div');
+      toast.className = 'fixed bottom-6 right-6 z-50 bg-inverse-surface text-inverse-on-surface px-4 py-3 rounded-xl shadow-xl text-label-md font-label-md flex items-center gap-2 animate-bounce';
+      toast.innerHTML = \`<span class="material-symbols-outlined text-primary-fixed">check_circle</span> \${actionName}\`;
+      document.body.appendChild(toast);
+      setTimeout(() => toast.remove(), 3000);
+    }
+  </script>
+</div></main></body></html>
