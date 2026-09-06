@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">  tailwind.config = {    darkMode: "class",    theme: {      extend: {        "colors": {          "secondary": "#855300",          "on-tertiary-fixed": "#3f0016",          "on-primary": "#ffffff",          "on-tertiary-fixed-variant": "#8a143c",          "on-tertiary": "#ffffff",          "on-secondary-container": "#684000",          "tertiary-fixed": "#ffd9de",          "on-secondary-fixed-variant": "#653e00",          "on-background": "#191c1e",          "on-primary-fixed-variant": "#005320",          "surface-container-lowest": "#ffffff",          "surface-container": "#eceef0",          "on-secondary-fixed": "#2a1700",          "inverse-surface": "#2d3133",          "secondary-container": "#fea619",          "secondary-fixed": "#ffddb8",          "tertiary-fixed-dim": "#ffb2bf",          "surface-dim": "#d8dadc",          "surface-container-low": "#f2f4f6",          "surface-bright": "#f7f9fb",          "primary-fixed": "#7ffc97",          "primary-container": "#00873a",          "on-primary-fixed": "#002109",          "surface-container-highest": "#e0e3e5",          "on-secondary": "#ffffff",          "outline-variant": "#bdcaba",          "on-error-container": "#93000a",          "surface-tint": "#006e2d",          "background": "#f7f9fb",          "primary-fixed-dim": "#62df7d",          "on-primary-container": "#f7fff2",          "tertiary": "#a72d51",          "on-tertiary-container": "#fffbff",          "primary": "#006b2c",          "error": "#ba1a1a",          "surface-variant": "#e0e3e5",          "inverse-on-surface": "#eff1f3",          "inverse-primary": "#62df7d",          "on-surface": "#191c1e",          "error-container": "#ffdad6",          "surface": "#f7f9fb",          "on-surface-variant": "#3e4a3d",          "surface-container-high": "#e6e8ea",          "secondary-fixed-dim": "#ffb95f",          "on-error": "#ffffff",          "tertiary-container": "#c74668",          "outline": "#6e7b6c"        },        "borderRadius": {          "DEFAULT": "0.25rem",          "lg": "0.5rem",          "xl": "0.75rem",          "full": "9999px"        },        "spacing": {          "unit-6": "24px",          "unit-2": "8px",          "gutter-tablet": "16px",          "gutter-mobile": "12px",          "unit-1": "4px",          "unit-8": "32px",          "margin-mobile": "16px",          "unit-4": "16px",          "layout-max-width": "1280px",          "unit-3": "12px",          "margin-desktop": "32px",          "gutter-desktop": "24px"        },        "fontFamily": {          "headline-md": ["Plus Jakarta Sans"],          "body-lg": ["Plus Jakarta Sans"],          "label-md": ["Plus Jakarta Sans"],          "headline-lg": ["Plus Jakarta Sans"],          "label-sm": ["Plus Jakarta Sans"],          "headline-sm": ["Plus Jakarta Sans"],          "body-md": ["Plus Jakarta Sans"],          "body-sm": ["Plus Jakarta Sans"],          "label-lg": ["Plus Jakarta Sans"]        },        "fontSize": {          "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }],          "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],          "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],          "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],          "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "700" }],          "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }],          "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],          "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],          "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }]        }      }    }  }</script><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col pt-6 pb-8 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="px-6 mb-8 flex items-center gap-3"><img alt="Minimalist fresh green grocery shopping bag and leaf icon, modern retail branding, flat vector style. Design context: - Primary color: #16a34a - Font: plusJakartaSans - Mode: light - Roundness: rounded-md . The logo should be visually consistent with these brand tokens." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeRcjvrC5PGfl-_ULNy7x4TQTnWTWz9gOdk7lZTausJCnQL2r0ZlPq3LQGo8FhR0s1sfxMJzWFK6vHFO5RlpYo-zhpyb-dJ4AXW3N_wvQAS0L_E6sdoB72JojBvQAsYm--ZoOgbDb9h6H21VHarUbmjv2_75nOD84OfGiKZsRRvh2M5M4DEY1ykMH_eOcdPhHB4mwQne6VdaZKHmEfffNQeNVetsgnH26dOrDhLs0qAhOpEfGEHU_Exw"/><span class="text-headline-sm font-headline-sm text-primary tracking-tight">BasketFresh</span></div><nav class="flex-1 px-4 space-y-1 overflow-y-auto" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">dashboard</span>Dashboard</a><a class="flex items-center px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="orders" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">orders</span>Orders</a><a class="flex items-center px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="products" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">inventory_2</span>Products</a><a class="flex items-center px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="categories" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">category</span>Categories</a><a class="flex items-center px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="inventory" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">warehouse</span>Inventory</a><a class="flex items-center px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="customers" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">group</span>Customers</a><a class="flex items-center px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="coupons" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">local_offer</span>Coupons</a><a class="flex items-center px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="offers" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">bolt</span>Offers</a><a class="flex items-center px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="reviews" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">rate_review</span>Reviews</a><a class="flex items-center px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="notifications" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">notifications</span>Notifications</a><a class="flex items-center px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="analytics" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">analytics</span>Analytics</a><a aria-current="page" class="flex items-center px-4 py-2.5 transition-all bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="settings" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">settings</span>Settings</a></nav></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-8"><div class="flex items-center gap-4 flex-1 max-w-md"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-[20px]">search</span><input class="w-full bg-surface-container-low pl-10 pr-4 py-2 rounded-lg text-body-md text-on-surface outline-none border border-outline-variant/30 focus:border-primary transition-all" placeholder="Search orders, products, customers..." type="text"/></div></div><div class="flex items-center gap-4"><button class="p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-full transition-all relative"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-error rounded-full"></span></button><button class="p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-full transition-all"><span class="material-symbols-outlined text-[22px]">add_box</span></button><div class="flex items-center gap-3 pl-4 border-l border-outline-variant/30"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden md:block"><div class="text-label-lg text-on-surface">Admin User</div><div class="text-label-sm text-on-surface-variant">Store Manager</div></div></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full max-w-layout-max-width mx-auto px-margin-mobile md:px-margin-desktop py-unit-8">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Store Settings</h1>
+<p class="font-body-md text-on-surface-variant mt-1">Manage global preferences, fulfillment thresholds, and regional compliance for BasketFresh.</p>
+</div>
+<div class="flex items-center gap-3">
+<button class="px-4 py-2.5 rounded-lg bg-surface-container-high text-on-surface font-label-lg hover:bg-surface-container-highest transition-all" type="button">Discard Changes</button>
+<button class="px-5 py-2.5 rounded-lg bg-primary text-on-primary font-label-lg hover:bg-primary-container transition-all shadow-sm flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">save</span>
+        Save Preferences
+      </button>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<div class="lg:col-span-3 bg-surface-container-low p-3 rounded-xl shadow-sm">
+<nav class="space-y-1" id="settings-tabs">
+<button class="w-full flex items-center px-4 py-3 rounded-lg font-label-lg text-on-surface bg-primary-container text-on-primary-container transition-all" data-tab="general" onclick="switchTab('general')">
+<span class="material-symbols-outlined mr-3 text-[20px]">storefront</span>General
+        </button>
+<button class="w-full flex items-center px-4 py-3 rounded-lg font-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-tab="store" onclick="switchTab('store')">
+<span class="material-symbols-outlined mr-3 text-[20px]">location_on</span>Store Profile
+        </button>
+<button class="w-full flex items-center px-4 py-3 rounded-lg font-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-tab="delivery" onclick="switchTab('delivery')">
+<span class="material-symbols-outlined mr-3 text-[20px]">local_shipping</span>Delivery &amp; Zones
+        </button>
+<button class="w-full flex items-center px-4 py-3 rounded-lg font-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-tab="payments" onclick="switchTab('payments')">
+<span class="material-symbols-outlined mr-3 text-[20px]">payments</span>Payments
+        </button>
+<button class="w-full flex items-center px-4 py-3 rounded-lg font-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-tab="taxes" onclick="switchTab('taxes')">
+<span class="material-symbols-outlined mr-3 text-[20px]">receipt_long</span>Taxes
+        </button>
+<button class="w-full flex items-center px-4 py-3 rounded-lg font-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-tab="users" onclick="switchTab('users')">
+<span class="material-symbols-outlined mr-3 text-[20px]">admin_panel_settings</span>Admin Users
+        </button>
+<button class="w-full flex items-center px-4 py-3 rounded-lg font-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-tab="roles" onclick="switchTab('roles')">
+<span class="material-symbols-outlined mr-3 text-[20px]">shield_person</span>Roles &amp; Permissions
+        </button>
+<button class="w-full flex items-center px-4 py-3 rounded-lg font-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-tab="security" onclick="switchTab('security')">
+<span class="material-symbols-outlined mr-3 text-[20px]">lock</span>Security
+        </button>
+</nav>
+</div>
+<div class="lg:col-span-9 space-y-6">
+<div class="settings-panel bg-surface-container-low p-6 md:p-8 rounded-xl shadow-sm space-y-6" id="panel-general">
+<div class="border-b border-outline-variant/20 pb-4">
+<h2 class="font-headline-md text-headline-md text-on-surface">General Configuration</h2>
+<p class="font-body-sm text-on-surface-variant mt-0.5">Basic identity and local currency settings for your storefront.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-label-md text-on-surface mb-2">Store Name</label>
+<input class="w-full bg-surface-container-lowest px-4 py-2.5 rounded-lg border border-outline-variant/30 text-on-surface focus:border-primary outline-none transition-all" type="text" value="BasketFresh Grocery"/>
+</div>
+<div>
+<label class="block font-label-md text-on-surface mb-2">Support Email</label>
+<input class="w-full bg-surface-container-lowest px-4 py-2.5 rounded-lg border border-outline-variant/30 text-on-surface focus:border-primary outline-none transition-all" type="email" value="support@basketfresh.in"/>
+</div>
+<div>
+<label class="block font-label-md text-on-surface mb-2">Default Currency</label>
+<select class="w-full bg-surface-container-lowest px-4 py-2.5 rounded-lg border border-outline-variant/30 text-on-surface focus:border-primary outline-none transition-all">
+<option selected="">₹ INR (Indian Rupee)</option>
+<option>$ USD (US Dollar)</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-on-surface mb-2">Contact Phone</label>
+<input class="w-full bg-surface-container-lowest px-4 py-2.5 rounded-lg border border-outline-variant/30 text-on-surface focus:border-primary outline-none transition-all" type="text" value="+91 98765 43210"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-on-surface mb-2">Store Bio / Description</label>
+<textarea class="w-full bg-surface-container-lowest px-4 py-2.5 rounded-lg border border-outline-variant/30 text-on-surface focus:border-primary outline-none transition-all" rows="3">Fresh organic groceries delivered straight from local farmers to your doorstep within 60 minutes.</textarea>
+</div>
+</div>
+<div class="settings-panel hidden bg-surface-container-low p-6 md:p-8 rounded-xl shadow-sm space-y-6" id="panel-store">
+<div class="border-b border-outline-variant/20 pb-4">
+<h2 class="font-headline-md text-headline-md text-on-surface">Store Profile &amp; Locations</h2>
+<p class="font-body-sm text-on-surface-variant mt-0.5">Physical warehouse addresses and regional tax jurisdiction.</p>
+</div>
+<div class="space-y-4">
+<div>
+<label class="block font-label-md text-on-surface mb-2">Primary Warehouse Address</label>
+<input class="w-full bg-surface-container-lowest px-4 py-2.5 rounded-lg border border-outline-variant/30 text-on-surface focus:border-primary outline-none transition-all" type="text" value="Plot 42, Agro Industrial Estate, Hebbal Outer Ring Rd"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div>
+<label class="block font-label-md text-on-surface mb-2">City</label>
+<input class="w-full bg-surface-container-lowest px-4 py-2.5 rounded-lg border border-outline-variant/30 text-on-surface focus:border-primary outline-none transition-all" type="text" value="Bengaluru"/>
+</div>
+<div>
+<label class="block font-label-md text-on-surface mb-2">State / Region</label>
+<input class="w-full bg-surface-container-lowest px-4 py-2.5 rounded-lg border border-outline-variant/30 text-on-surface focus:border-primary outline-none transition-all" type="text" value="Karnataka"/>
+</div>
+<div>
+<label class="block font-label-md text-on-surface mb-2">Postal Code</label>
+<input class="w-full bg-surface-container-lowest px-4 py-2.5 rounded-lg border border-outline-variant/30 text-on-surface focus:border-primary outline-none transition-all" type="text" value="560094"/>
+</div>
+</div>
+<div class="pt-2">
+<div class="w-full h-48 bg-cover bg-center rounded-xl shadow-sm" data-alt="Stylized map graphic showing local logistics hub in Bengaluru with green delivery radius circles." data-location="Bengaluru, India" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAvG07qQeWBhgcXJCjLPeuq63_gxSJfFeaBK4LaHKh5O_zT9mju9Ca3s5G2WireGCBtDwriNuOXvntGEagG8xzcLztWCD8jTHq_Wd7G2xUITQ5Of-4h6EhZ9dJiOznVZoQf8jlXcmZHXwgMstFWZZE4c71S92Y_VZ_xNxZQgrADc5qtYfvB8LBq47bUaG4Nsw9EpuPTB_FWTYYlI3u1uI4hNqQUigw_drwHkF2rWlXa9EtgQNdhT0YGBQ')"></div>
+</div>
+</div>
+</div>
+<div class="settings-panel hidden bg-surface-container-low p-6 md:p-8 rounded-xl shadow-sm space-y-6" id="panel-delivery">
+<div class="border-b border-outline-variant/20 pb-4">
+<h2 class="font-headline-md text-headline-md text-on-surface">Delivery &amp; Fulfillment Rules</h2>
+<p class="font-body-sm text-on-surface-variant mt-0.5">Configure free shipping thresholds, dispatch windows, and spatial delivery zones.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-surface-container-lowest p-5 rounded-xl border border-outline-variant/20">
+<label class="block font-label-lg text-on-surface mb-1">Free Delivery Threshold</label>
+<p class="font-body-sm text-on-surface-variant mb-4">Orders above this amount qualify for zero delivery fee.</p>
+<div class="relative">
+<span class="absolute left-3.5 top-2.5 text-outline font-semibold">₹</span>
+<input class="w-full bg-surface-container-low pl-8 pr-4 py-2 rounded-lg border border-outline-variant/30 text-on-surface font-semibold focus:border-primary outline-none" type="number" value="499"/>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-5 rounded-xl border border-outline-variant/20">
+<label class="block font-label-lg text-on-surface mb-1">Standard Delivery Fee</label>
+<p class="font-body-sm text-on-surface-variant mb-4">Applied to orders below the free threshold.</p>
+<div class="relative">
+<span class="absolute left-3.5 top-2.5 text-outline font-semibold">₹</span>
+<input class="w-full bg-surface-container-low pl-8 pr-4 py-2 rounded-lg border border-outline-variant/30 text-on-surface font-semibold focus:border-primary outline-none" type="number" value="49"/>
+</div>
+</div>
+</div>
+<div class="space-y-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Active Delivery Zones</h3>
+<div class="space-y-2">
+<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-lg border border-outline-variant/20">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[22px]">location_on</span>
+<div>
+<div class="font-label-lg text-on-surface">North &amp; Central Bengaluru</div>
+<div class="font-body-sm text-on-surface-variant">Radius: 8 km • Est. 45 mins</div>
+</div>
+</div>
+<span class="px-3 py-1 bg-primary-container text-on-primary-container rounded-full font-label-sm">Active</span>
+</div>
+<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-lg border border-outline-variant/20">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[22px]">location_on</span>
+<div>
+<div class="font-label-lg text-on-surface">Electronic City &amp; South Hub</div>
+<div class="font-body-sm text-on-surface-variant">Radius: 15 km • Est. 60 mins</div>
+</div>
+</div>
+<span class="px-3 py-1 bg-primary-container text-on-primary-container rounded-full font-label-sm">Active</span>
+</div>
+</div>
+</div>
+</div>
+<div class="settings-panel hidden bg-surface-container-low p-6 md:p-8 rounded-xl shadow-sm space-y-6" id="panel-payments">
+<div class="border-b border-outline-variant/20 pb-4">
+<h2 class="font-headline-md text-headline-md text-on-surface">Payment Gateways</h2>
+<p class="font-body-sm text-on-surface-variant mt-0.5">Enable and configure checkout payment methods.</p>
+</div>
+<div class="space-y-4">
+<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-xl border border-outline-variant/20">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">qr_code_2</span>
+</div>
+<div>
+<div class="font-label-lg text-on-surface">UPI (Google Pay, PhonePe, Paytm)</div>
+<div class="font-body-sm text-on-surface-variant">Instant zero-fee instant transfers</div>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-xl border border-outline-variant/20">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">credit_card</span>
+</div>
+<div>
+<div class="font-label-lg text-on-surface">Credit &amp; Debit Cards</div>
+<div class="font-body-sm text-on-surface-variant">Visa, MasterCard, RuPay</div>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-xl border border-outline-variant/20">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">account_balance</span>
+</div>
+<div>
+<div class="font-label-lg text-on-surface">Net Banking</div>
+<div class="font-body-sm text-on-surface-variant">All major Indian banks supported</div>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-xl border border-outline-variant/20">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">payments</span>
+</div>
+<div>
+<div class="font-label-lg text-on-surface">Cash on Delivery (COD)</div>
+<div class="font-body-sm text-on-surface-variant">Pay when groceries arrive</div>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+</div>
+<div class="settings-panel hidden bg-surface-container-low p-6 md:p-8 rounded-xl shadow-sm space-y-6" id="panel-taxes">
+<div class="border-b border-outline-variant/20 pb-4">
+<h2 class="font-headline-md text-headline-md text-on-surface">Tax Configuration</h2>
+<p class="font-body-sm text-on-surface-variant mt-0.5">GST rates and invoicing defaults for grocery items.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-label-md text-on-surface mb-2">GSTIN Number</label>
+<input class="w-full bg-surface-container-lowest px-4 py-2.5 rounded-lg border border-outline-variant/30 text-on-surface focus:border-primary outline-none" type="text" value="29AABCB1234F1Z5"/>
+</div>
+<div>
+<label class="block font-label-md text-on-surface mb-2">Default Grocery Tax Slab</label>
+<select class="w-full bg-surface-container-lowest px-4 py-2.5 rounded-lg border border-outline-variant/30 text-on-surface focus:border-primary outline-none">
+<option selected="">0% (Unprocessed Fresh Produce &amp; Milk)</option>
+<option>5% (Processed Foods &amp; Packaged Goods)</option>
+<option>12% (Standard Retail)</option>
+</select>
+</div>
+</div>
+</div>
+<div class="settings-panel hidden bg-surface-container-low p-6 md:p-8 rounded-xl shadow-sm space-y-6" id="panel-users">
+<div class="flex items-center justify-between border-b border-outline-variant/20 pb-4">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Admin Users</h2>
+<p class="font-body-sm text-on-surface-variant mt-0.5">Manage team members with dashboard access.</p>
+</div>
+<button class="px-4 py-2 bg-primary text-on-primary rounded-lg font-label-md hover:bg-primary-container transition-all" type="button">Invite Admin</button>
+</div>
+<div class="space-y-3">
+<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-xl border border-outline-variant/20">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary font-bold">A</div>
+<div>
+<div class="font-label-lg text-on-surface">Admin User</div>
+<div class="font-body-sm text-on-surface-variant">admin@basketfresh.in • Super Admin</div>
+</div>
+</div>
+<span class="px-2.5 py-1 bg-primary-container text-on-primary-container rounded-full font-label-sm">Active</span>
+</div>
+<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-xl border border-outline-variant/20">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-on-secondary font-bold">R</div>
+<div>
+<div class="font-label-lg text-on-surface">Rahul Sharma</div>
+<div class="font-body-sm text-on-surface-variant">rahul@basketfresh.in • Inventory Manager</div>
+</div>
+</div>
+<span class="px-2.5 py-1 bg-primary-container text-on-primary-container rounded-full font-label-sm">Active</span>
+</div>
+</div>
+</div>
+<div class="settings-panel hidden bg-surface-container-low p-6 md:p-8 rounded-xl shadow-sm space-y-6" id="panel-roles">
+<div class="border-b border-outline-variant/20 pb-4">
+<h2 class="font-headline-md text-headline-md text-on-surface">Roles &amp; Permissions</h2>
+<p class="font-body-sm text-on-surface-variant mt-0.5">Define access scopes for administrative positions.</p>
+</div>
+<div class="space-y-4">
+<div class="p-4 bg-surface-container-lowest rounded-xl border border-outline-variant/20 flex items-center justify-between">
+<div>
+<div class="font-label-lg text-on-surface">Super Admin</div>
+<div class="font-body-sm text-on-surface-variant">Full access to store settings, financial records, and user management.</div>
+</div>
+<span class="font-label-md text-primary">All Permissions</span>
+</div>
+<div class="p-4 bg-surface-container-lowest rounded-xl border border-outline-variant/20 flex items-center justify-between">
+<div>
+<div class="font-label-lg text-on-surface">Inventory Manager</div>
+<div class="font-body-sm text-on-surface-variant">Can update product catalog, stock counts, and categories.</div>
+</div>
+<span class="font-label-md text-primary">Catalog Only</span>
+</div>
+</div>
+</div>
+<div class="settings-panel hidden bg-surface-container-low p-6 md:p-8 rounded-xl shadow-sm space-y-6" id="panel-security">
+<div class="border-b border-outline-variant/20 pb-4">
+<h2 class="font-headline-md text-headline-md text-on-surface">Security &amp; Authentication</h2>
+<p class="font-body-sm text-on-surface-variant mt-0.5">Enforce multi-factor verification and session constraints.</p>
+</div>
+<div class="space-y-4">
+<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-xl border border-outline-variant/20">
+<div>
+<div class="font-label-lg text-on-surface">Two-Factor Authentication (2FA)</div>
+<div class="font-body-sm text-on-surface-variant">Require OTP verification for all admin logins.</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-xl border border-outline-variant/20">
+<div>
+<div class="font-label-lg text-on-surface">Session Timeout</div>
+<div class="font-body-sm text-on-surface-variant">Auto logout admin users after 30 minutes of inactivity.</div>
+</div>
+<select class="bg-surface-container-low px-3 py-1.5 rounded-lg border border-outline-variant/30 text-on-surface font-label-md">
+<option>30 Minutes</option>
+<option>1 Hour</option>
+<option>4 Hours</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function switchTab(tabName) {
+    const panels = document.querySelectorAll('.settings-panel');
+    panels.forEach(p => p.classList.add('hidden'));
+    document.getElementById('panel-' + tabName).classList.remove('hidden');
+
+    const buttons = document.querySelectorAll('#settings-tabs button');
+    buttons.forEach(b => {
+      b.className = "w-full flex items-center px-4 py-3 rounded-lg font-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all";
+    });
+    const activeBtn = document.querySelector(`[data-tab="${tabName}"]`);
+    if(activeBtn) {
+      activeBtn.className = "w-full flex items-center px-4 py-3 rounded-lg font-label-lg text-on-surface bg-primary-container text-on-primary-container transition-all";
+    }
+  }
+</script></main></div></body></html>

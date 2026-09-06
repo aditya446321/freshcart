@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">  tailwind.config = {    darkMode: "class",    theme: {      extend: {        "colors": {          "secondary": "#855300",          "on-tertiary-fixed": "#3f0016",          "on-primary": "#ffffff",          "on-tertiary-fixed-variant": "#8a143c",          "on-tertiary": "#ffffff",          "on-secondary-container": "#684000",          "tertiary-fixed": "#ffd9de",          "on-secondary-fixed-variant": "#653e00",          "on-background": "#191c1e",          "on-primary-fixed-variant": "#005320",          "surface-container-lowest": "#ffffff",          "surface-container": "#eceef0",          "on-secondary-fixed": "#2a1700",          "inverse-surface": "#2d3133",          "secondary-container": "#fea619",          "secondary-fixed": "#ffddb8",          "tertiary-fixed-dim": "#ffb2bf",          "surface-dim": "#d8dadc",          "surface-container-low": "#f2f4f6",          "surface-bright": "#f7f9fb",          "primary-fixed": "#7ffc97",          "primary-container": "#00873a",          "on-primary-fixed": "#002109",          "surface-container-highest": "#e0e3e5",          "on-secondary": "#ffffff",          "outline-variant": "#bdcaba",          "on-error-container": "#93000a",          "surface-tint": "#006e2d",          "background": "#f7f9fb",          "primary-fixed-dim": "#62df7d",          "on-primary-container": "#f7fff2",          "tertiary": "#a72d51",          "on-tertiary-container": "#fffbff",          "primary": "#006b2c",          "error": "#ba1a1a",          "surface-variant": "#e0e3e5",          "inverse-on-surface": "#eff1f3",          "inverse-primary": "#62df7d",          "on-surface": "#191c1e",          "error-container": "#ffdad6",          "surface": "#f7f9fb",          "on-surface-variant": "#3e4a3d",          "surface-container-high": "#e6e8ea",          "secondary-fixed-dim": "#ffb95f",          "on-error": "#ffffff",          "tertiary-container": "#c74668",          "outline": "#6e7b6c"        },        "borderRadius": {          "DEFAULT": "0.25rem",          "lg": "0.5rem",          "xl": "0.75rem",          "full": "9999px"        },        "spacing": {          "unit-6": "24px",          "unit-2": "8px",          "gutter-tablet": "16px",          "gutter-mobile": "12px",          "unit-1": "4px",          "unit-8": "32px",          "margin-mobile": "16px",          "unit-4": "16px",          "layout-max-width": "1280px",          "unit-3": "12px",          "margin-desktop": "32px",          "gutter-desktop": "24px"        },        "fontFamily": {          "headline-md": ["Plus Jakarta Sans"],          "body-lg": ["Plus Jakarta Sans"],          "label-md": ["Plus Jakarta Sans"],          "headline-lg": ["Plus Jakarta Sans"],          "label-sm": ["Plus Jakarta Sans"],          "headline-sm": ["Plus Jakarta Sans"],          "body-md": ["Plus Jakarta Sans"],          "body-sm": ["Plus Jakarta Sans"],          "label-lg": ["Plus Jakarta Sans"]        },        "fontSize": {          "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }],          "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],          "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],          "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],          "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "700" }],          "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }],          "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],          "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],          "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }]        }      }    }  }</script><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col pt-6 pb-8 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="px-6 mb-8 flex items-center gap-3"><img alt="Minimalist fresh green grocery shopping bag and leaf icon, modern retail branding, flat vector style. Design context: - Primary color: #16a34a - Font: plusJakartaSans - Mode: light - Roundness: rounded-md . The logo should be visually consistent with these brand tokens." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkxwkLecGwsb1siKxBGybhmekqa5RFqIEnlDeIaABuxaXZniIjxDHtybOoEus0Mu9vg2g9ESzUGH8rY2K9Dv_veUFLovA0jAeaWGBAPURqfByvsbnp0sXw1f-rlCJroBBwnaDzK8OynY6MvnN64GS21j4NXvbHM3ytvrdmwdF-htgXx8Xbof6-taWju3amuLTMqvKJMQh_MAv8V6pZx5bfG2YX7pH_8B8s8EyqsdUAT3T_X0136VDb7g"/><span class="text-headline-sm font-headline-sm text-primary tracking-tight">BasketFresh</span></div><nav class="flex-1 px-4 space-y-1 overflow-y-auto" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a aria-current="page" class="flex items-center px-4 py-2.5 transition-all bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="dashboard" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">dashboard</span>Dashboard</a><a class="flex items-center px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="orders" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">orders</span>Orders</a><a class="flex items-center px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="products" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">inventory_2</span>Products</a><a class="flex items-center px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="categories" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">category</span>Categories</a><a class="flex items-center px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="inventory" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">warehouse</span>Inventory</a><a class="flex items-center px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="customers" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">group</span>Customers</a><a class="flex items-center px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="coupons" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">local_offer</span>Coupons</a><a class="flex items-center px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="offers" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">bolt</span>Offers</a><a class="flex items-center px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="reviews" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">rate_review</span>Reviews</a><a class="flex items-center px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="notifications" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">notifications</span>Notifications</a><a class="flex items-center px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="analytics" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">analytics</span>Analytics</a><a class="flex items-center px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">settings</span>Settings</a></nav></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-8"><div class="flex items-center gap-4 flex-1 max-w-md"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-[20px]">search</span><input class="w-full bg-surface-container-low pl-10 pr-4 py-2 rounded-lg text-body-md text-on-surface outline-none border border-outline-variant/30 focus:border-primary transition-all" placeholder="Search orders, products, customers..." type="text"/></div></div><div class="flex items-center gap-4"><button class="p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-full transition-all relative"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-error rounded-full"></span></button><button class="p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-full transition-all"><span class="material-symbols-outlined text-[22px]">add_box</span></button><div class="flex items-center gap-3 pl-4 border-l border-outline-variant/30"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden md:block"><div class="text-label-lg text-on-surface">Admin User</div><div class="text-label-sm text-on-surface-variant">Store Manager</div></div></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full pb-16">
+<!-- Delivery Banner / Alert Section -->
+<div class="px-8 pt-6 pb-2">
+<div class="bg-surface-container-low rounded-xl p-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 shadow-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">warning</span>
+</div>
+<div>
+<h2 class="text-headline-sm text-on-surface">Operational Attention Required</h2>
+<p class="text-body-md text-on-surface-variant">8 products are running low on stock and 12 orders are currently pending fulfillment.</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<button class="px-4 py-2 bg-secondary text-on-secondary rounded-lg text-label-lg hover:opacity-90 transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">inventory</span> Restock Items
+        </button>
+<button class="px-4 py-2 bg-surface-container-high text-on-surface rounded-lg text-label-lg hover:bg-surface-dim transition-all">
+          View Pending
+        </button>
+</div>
+</div>
+</div>
+<!-- Header Section: Greeting & Date Range -->
+<div class="px-8 py-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<h1 class="text-headline-lg text-on-surface">Good morning, Admin</h1>
+<p class="text-body-lg text-on-surface-variant">Here is what's happening with BasketFresh today.</p>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-low p-1.5 rounded-xl shadow-sm">
+<button class="px-3 py-1.5 bg-primary text-on-primary rounded-lg text-label-md transition-all shadow-sm">Today</button>
+<button class="px-3 py-1.5 text-on-surface-variant hover:text-on-surface rounded-lg text-label-md transition-all">Last 7 days</button>
+<button class="px-3 py-1.5 text-on-surface-variant hover:text-on-surface rounded-lg text-label-md transition-all">Last 30 days</button>
+<button class="px-3 py-1.5 text-on-surface-variant hover:text-on-surface rounded-lg text-label-md transition-all">Custom</button>
+</div>
+</div>
+<!-- 8 KPI Cards Grid -->
+<div class="px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+<!-- KPI 1 -->
+<div class="bg-surface-container-low p-5 rounded-xl shadow-sm flex flex-col justify-between hover:translate-y-[-2px] transition-all">
+<div class="flex items-center justify-between mb-4">
+<span class="text-label-md text-on-surface-variant uppercase tracking-wider">Total Sales</span>
+<span class="p-2 bg-primary-container/20 text-primary rounded-lg material-symbols-outlined text-[20px]">payments</span>
+</div>
+<div class="flex items-baseline justify-between">
+<span class="text-headline-md text-on-surface">₹1,24,580</span>
+<span class="text-label-md text-primary bg-primary-container/10 px-2 py-0.5 rounded flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>12.4%
+        </span>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="bg-surface-container-low p-5 rounded-xl shadow-sm flex flex-col justify-between hover:translate-y-[-2px] transition-all">
+<div class="flex items-center justify-between mb-4">
+<span class="text-label-md text-on-surface-variant uppercase tracking-wider">Total Orders</span>
+<span class="p-2 bg-secondary-fixed/30 text-secondary rounded-lg material-symbols-outlined text-[20px]">shopping_bag</span>
+</div>
+<div class="flex items-baseline justify-between">
+<span class="text-headline-md text-on-surface">342</span>
+<span class="text-label-md text-primary bg-primary-container/10 px-2 py-0.5 rounded flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>8.1%
+        </span>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="bg-surface-container-low p-5 rounded-xl shadow-sm flex flex-col justify-between hover:translate-y-[-2px] transition-all">
+<div class="flex items-center justify-between mb-4">
+<span class="text-label-md text-on-surface-variant uppercase tracking-wider">Avg Order Value</span>
+<span class="p-2 bg-tertiary-fixed/30 text-tertiary rounded-lg material-symbols-outlined text-[20px]">receipt_long</span>
+</div>
+<div class="flex items-baseline justify-between">
+<span class="text-headline-md text-on-surface">₹645</span>
+<span class="text-label-md text-primary bg-primary-container/10 px-2 py-0.5 rounded flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>4.3%
+        </span>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="bg-surface-container-low p-5 rounded-xl shadow-sm flex flex-col justify-between hover:translate-y-[-2px] transition-all">
+<div class="flex items-center justify-between mb-4">
+<span class="text-label-md text-on-surface-variant uppercase tracking-wider">Total Customers</span>
+<span class="p-2 bg-primary-container/20 text-primary rounded-lg material-symbols-outlined text-[20px]">group</span>
+</div>
+<div class="flex items-baseline justify-between">
+<span class="text-headline-md text-on-surface">1,428</span>
+<span class="text-label-md text-primary bg-primary-container/10 px-2 py-0.5 rounded flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>15.2%
+        </span>
+</div>
+</div>
+<!-- KPI 5 -->
+<div class="bg-surface-container-low p-5 rounded-xl shadow-sm flex flex-col justify-between hover:translate-y-[-2px] transition-all">
+<div class="flex items-center justify-between mb-4">
+<span class="text-label-md text-on-surface-variant uppercase tracking-wider">Products Sold</span>
+<span class="p-2 bg-secondary-fixed/30 text-secondary rounded-lg material-symbols-outlined text-[20px]">inventory_2</span>
+</div>
+<div class="flex items-baseline justify-between">
+<span class="text-headline-md text-on-surface">2,840</span>
+<span class="text-label-md text-primary bg-primary-container/10 px-2 py-0.5 rounded flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>6.7%
+        </span>
+</div>
+</div>
+<!-- KPI 6 -->
+<div class="bg-surface-container-low p-5 rounded-xl shadow-sm flex flex-col justify-between hover:translate-y-[-2px] transition-all">
+<div class="flex items-center justify-between mb-4">
+<span class="text-label-md text-on-surface-variant uppercase tracking-wider">Low Stock</span>
+<span class="p-2 bg-error-container text-error rounded-lg material-symbols-outlined text-[20px]">warning</span>
+</div>
+<div class="flex items-baseline justify-between">
+<span class="text-headline-md text-error">8</span>
+<span class="text-label-md text-error bg-error-container/50 px-2 py-0.5 rounded">Action req.</span>
+</div>
+</div>
+<!-- KPI 7 -->
+<div class="bg-surface-container-low p-5 rounded-xl shadow-sm flex flex-col justify-between hover:translate-y-[-2px] transition-all">
+<div class="flex items-center justify-between mb-4">
+<span class="text-label-md text-on-surface-variant uppercase tracking-wider">Pending Orders</span>
+<span class="p-2 bg-secondary-container/20 text-secondary rounded-lg material-symbols-outlined text-[20px]">pending_actions</span>
+</div>
+<div class="flex items-baseline justify-between">
+<span class="text-headline-md text-on-surface">12</span>
+<span class="text-label-md text-secondary bg-secondary-container/10 px-2 py-0.5 rounded">In queue</span>
+</div>
+</div>
+<!-- KPI 8 -->
+<div class="bg-surface-container-low p-5 rounded-xl shadow-sm flex flex-col justify-between hover:translate-y-[-2px] transition-all">
+<div class="flex items-center justify-between mb-4">
+<span class="text-label-md text-on-surface-variant uppercase tracking-wider">Cancelled Orders</span>
+<span class="p-2 bg-surface-container-high text-on-surface-variant rounded-lg material-symbols-outlined text-[20px]">cancel</span>
+</div>
+<div class="flex items-baseline justify-between">
+<span class="text-headline-md text-on-surface">3</span>
+<span class="text-label-md text-on-surface-variant bg-surface-container-high px-2 py-0.5 rounded">-0.8%</span>
+</div>
+</div>
+</div>
+<!-- Analytics Section & Operational Summary -->
+<div class="px-8 grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
+<!-- Interactive Sales & Order Analytics Chart (2 Cols) -->
+<div class="lg:col-span-2 bg-surface-container-low p-6 rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+<div>
+<h2 class="text-headline-sm text-on-surface">Sales &amp; Orders Overview</h2>
+<p class="text-body-sm text-on-surface-variant">Real-time revenue and order volume trends</p>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1 bg-surface-container-high text-on-surface rounded text-label-md">Revenue</button>
+<button class="px-3 py-1 text-on-surface-variant hover:text-on-surface rounded text-label-md">Orders</button>
+</div>
+</div>
+<!-- Custom CSS/SVG Chart representation -->
+<div class="relative h-64 w-full flex items-end justify-between gap-2 pt-8 pb-2 px-2">
+<!-- Background Grid Lines -->
+<div class="absolute inset-x-0 top-0 h-full flex flex-col justify-between pointer-events-none opacity-20">
+<div class="border-b border-outline w-full"></div>
+<div class="border-b border-outline w-full"></div>
+<div class="border-b border-outline w-full"></div>
+<div class="border-b border-outline w-full"></div>
+</div>
+<!-- Bars -->
+<div class="relative z-10 flex-1 flex flex-col items-center gap-2 group">
+<div class="w-full bg-primary/20 group-hover:bg-primary transition-all rounded-t h-[40%]"></div>
+<span class="text-label-sm text-on-surface-variant">06:00</span>
+</div>
+<div class="relative z-10 flex-1 flex flex-col items-center gap-2 group">
+<div class="w-full bg-primary/20 group-hover:bg-primary transition-all rounded-t h-[55%]"></div>
+<span class="text-label-sm text-on-surface-variant">08:00</span>
+</div>
+<div class="relative z-10 flex-1 flex flex-col items-center gap-2 group">
+<div class="w-full bg-primary/20 group-hover:bg-primary transition-all rounded-t h-[85%]"></div>
+<span class="text-label-sm text-on-surface-variant">10:00</span>
+</div>
+<div class="relative z-10 flex-1 flex flex-col items-center gap-2 group">
+<div class="w-full bg-primary group-hover:bg-primary-container transition-all rounded-t h-[95%]"></div>
+<span class="text-label-sm text-on-surface font-semibold">12:00</span>
+</div>
+<div class="relative z-10 flex-1 flex flex-col items-center gap-2 group">
+<div class="w-full bg-primary/20 group-hover:bg-primary transition-all rounded-t h-[70%]"></div>
+<span class="text-label-sm text-on-surface-variant">14:00</span>
+</div>
+<div class="relative z-10 flex-1 flex flex-col items-center gap-2 group">
+<div class="w-full bg-primary/20 group-hover:bg-primary transition-all rounded-t h-[60%]"></div>
+<span class="text-label-sm text-on-surface-variant">16:00</span>
+</div>
+<div class="relative z-10 flex-1 flex flex-col items-center gap-2 group">
+<div class="w-full bg-primary/20 group-hover:bg-primary transition-all rounded-t h-[45%]"></div>
+<span class="text-label-sm text-on-surface-variant">18:00</span>
+</div>
+<div class="relative z-10 flex-1 flex flex-col items-center gap-2 group">
+<div class="w-full bg-primary/20 group-hover:bg-primary transition-all rounded-t h-[30%]"></div>
+<span class="text-label-sm text-on-surface-variant">20:00</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-4 mt-4 border-t border-surface-container-high">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="text-body-sm text-on-surface-variant">Peak hours between 10:00 AM - 1:00 PM</span>
+</div>
+<span class="text-label-lg text-primary cursor-pointer hover:underline">View full analytics →</span>
+</div>
+</div>
+<!-- Operational Summary Widgets (1 Col) -->
+<div class="bg-surface-container-low p-6 rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<h2 class="text-headline-sm text-on-surface mb-1">Fulfillment Status</h2>
+<p class="text-body-sm text-on-surface-variant mb-6">Live counter of warehouse operations</p>
+</div>
+<div class="space-y-4">
+<!-- Widget 1: Preparing -->
+<div class="bg-surface p-4 rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed/30 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">local_mall</span>
+</div>
+<div>
+<div class="text-label-lg text-on-surface">Preparing Orders</div>
+<div class="text-body-sm text-on-surface-variant">Packing items in baskets</div>
+</div>
+</div>
+<span class="text-headline-sm text-on-surface font-bold bg-surface-container px-3 py-1 rounded-lg">18</span>
+</div>
+<!-- Widget 2: Dispatching -->
+<div class="bg-surface p-4 rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed/30 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">local_shipping</span>
+</div>
+<div>
+<div class="text-label-lg text-on-surface">Out for Delivery</div>
+<div class="text-body-sm text-on-surface-variant">Riders on the route</div>
+</div>
+</div>
+<span class="text-headline-sm text-on-surface font-bold bg-surface-container px-3 py-1 rounded-lg">24</span>
+</div>
+<!-- Widget 3: Ready for Pickup -->
+<div class="bg-surface p-4 rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed/30 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">storefront</span>
+</div>
+<div>
+<div class="text-label-lg text-on-surface">Store Pickup Ready</div>
+<div class="text-body-sm text-on-surface-variant">Awaiting customer arrival</div>
+</div>
+</div>
+<span class="text-headline-sm text-on-surface font-bold bg-surface-container px-3 py-1 rounded-lg">5</span>
+</div>
+</div>
+<div class="pt-4 mt-4">
+<button class="w-full py-2.5 bg-primary text-on-primary rounded-lg text-label-lg hover:opacity-90 transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">bolt</span> Manage Live Queue
+        </button>
+</div>
+</div>
+</div>
+<!-- Recent Orders Table Section -->
+<div class="px-8">
+<div class="bg-surface-container-low rounded-xl shadow-sm overflow-hidden">
+<!-- Table Header Bar -->
+<div class="p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-surface-container-high">
+<div>
+<h2 class="text-headline-sm text-on-surface">Recent Orders</h2>
+<p class="text-body-sm text-on-surface-variant">Latest grocery transactions across all delivery zones</p>
+</div>
+<div class="flex items-center gap-3">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-2 text-outline text-[18px]">filter_list</span>
+<select class="bg-surface pl-9 pr-4 py-2 rounded-lg text-body-md text-on-surface outline-none border-none cursor-pointer">
+<option>All Statuses</option>
+<option>Delivered</option>
+<option>Preparing</option>
+<option>Dispatched</option>
+<option>Cancelled</option>
+</select>
+</div>
+<button class="px-4 py-2 bg-primary text-on-primary rounded-lg text-label-lg hover:opacity-90 transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">download</span> Export CSV
+          </button>
+</div>
+</div>
+<!-- Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant text-label-md uppercase tracking-wider">
+<th class="py-3 px-6">Order ID</th>
+<th class="py-3 px-6">Customer</th>
+<th class="py-3 px-6">Items Preview</th>
+<th class="py-3 px-6">Total Amount</th>
+<th class="py-3 px-6">Status</th>
+<th class="py-3 px-6">Time</th>
+<th class="py-3 px-6 text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high text-body-md text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container transition-all">
+<td class="py-4 px-6 font-semibold text-primary">#BF-9842</td>
+<td class="py-4 px-6 flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant font-semibold text-xs">AP</div>
+<div>
+<div class="font-medium">Aarav Patel</div>
+<div class="text-body-sm text-on-surface-variant">Koramangala, Blr</div>
+</div>
+</td>
+<td class="py-4 px-6 text-on-surface-variant">Organic Alphonso Mangoes (1kg), Fresh Farm Milk (1L) +2 more</td>
+<td class="py-4 px-6 font-semibold">₹450</td>
+<td class="py-4 px-6">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full text-label-sm bg-primary-container/20 text-primary font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mr-1.5"></span> Delivered
+                </span>
+</td>
+<td class="py-4 px-6 text-on-surface-variant text-body-sm">10 mins ago</td>
+<td class="py-4 px-6 text-right">
+<button class="p-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-all">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container transition-all">
+<td class="py-4 px-6 font-semibold text-primary">#BF-9841</td>
+<td class="py-4 px-6 flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant font-semibold text-xs">PS</div>
+<div>
+<div class="font-medium">Priya Sharma</div>
+<div class="text-body-sm text-on-surface-variant">Indiranagar, Blr</div>
+</div>
+</td>
+<td class="py-4 px-6 text-on-surface-variant">Fresh Spinach (250g), Multigrain Bread, Hass Avocados</td>
+<td class="py-4 px-6 font-semibold">₹320</td>
+<td class="py-4 px-6">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full text-label-sm bg-secondary-fixed/30 text-secondary font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mr-1.5"></span> Preparing
+                </span>
+</td>
+<td class="py-4 px-6 text-on-surface-variant text-body-sm">25 mins ago</td>
+<td class="py-4 px-6 text-right">
+<button class="p-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-all">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container transition-all">
+<td class="py-4 px-6 font-semibold text-primary">#BF-9840</td>
+<td class="py-4 px-6 flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant font-semibold text-xs">RK</div>
+<div>
+<div class="font-medium">Rahul Kumar</div>
+<div class="text-body-sm text-on-surface-variant">HSR Layout, Blr</div>
+</div>
+</td>
+<td class="py-4 px-6 text-on-surface-variant">Aashirvaad Atta (5kg), Fortune Sunflower Oil (1L), Toor Dal</td>
+<td class="py-4 px-6 font-semibold">₹890</td>
+<td class="py-4 px-6">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full text-label-sm bg-primary-fixed/40 text-on-primary-fixed font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container mr-1.5"></span> Dispatched
+                </span>
+</td>
+<td class="py-4 px-6 text-on-surface-variant text-body-sm">42 mins ago</td>
+<td class="py-4 px-6 text-right">
+<button class="p-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-all">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container transition-all">
+<td class="py-4 px-6 font-semibold text-primary">#BF-9839</td>
+<td class="py-4 px-6 flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant font-semibold text-xs">AN</div>
+<div>
+<div class="font-medium">Ananya Nair</div>
+<div class="text-body-sm text-on-surface-variant">Jayanagar, Blr</div>
+</div>
+</td>
+<td class="py-4 px-6 text-on-surface-variant">Fresh Organic Tomatoes (1kg), Onions (2kg), Green Chillies</td>
+<td class="py-4 px-6 font-semibold">₹210</td>
+<td class="py-4 px-6">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full text-label-sm bg-primary-container/20 text-primary font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mr-1.5"></span> Delivered
+                </span>
+</td>
+<td class="py-4 px-6 text-on-surface-variant text-body-sm">1 hour ago</td>
+<td class="py-4 px-6 text-right">
+<button class="p-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-all">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container transition-all">
+<td class="py-4 px-6 font-semibold text-primary">#BF-9838</td>
+<td class="py-4 px-6 flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant font-semibold text-xs">VM</div>
+<div>
+<div class="font-medium">Vikram Malhotra</div>
+<div class="text-body-sm text-on-surface-variant">Whitefield, Blr</div>
+</div>
+</td>
+<td class="py-4 px-6 text-on-surface-variant">Amul Butter (500g), Britannia Brown Bread, Fresh Eggs (Tray)</td>
+<td class="py-4 px-6 font-semibold">₹540</td>
+<td class="py-4 px-6">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full text-label-sm bg-error-container text-error font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-error mr-1.5"></span> Cancelled
+                </span>
+</td>
+<td class="py-4 px-6 text-on-surface-variant text-body-sm">2 hours ago</td>
+<td class="py-4 px-6 text-right">
+<button class="p-1.5 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-all">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer Pagination -->
+<div class="p-4 border-t border-surface-container-high flex items-center justify-between">
+<span class="text-body-sm text-on-surface-variant">Showing 5 of 342 orders</span>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1 bg-surface-container text-on-surface rounded text-label-md disabled:opacity-50" disabled="">Previous</button>
+<button class="px-3 py-1 bg-primary text-on-primary rounded text-label-md">1</button>
+<button class="px-3 py-1 bg-surface-container text-on-surface hover:bg-surface-container-high rounded text-label-md">2</button>
+<button class="px-3 py-1 bg-surface-container text-on-surface hover:bg-surface-container-high rounded text-label-md">3</button>
+<button class="px-3 py-1 bg-surface-container text-on-surface hover:bg-surface-container-high rounded text-label-md">Next</button>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

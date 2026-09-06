@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">  tailwind.config = {    darkMode: "class",    theme: {      extend: {        "colors": {          "secondary": "#855300",          "on-tertiary-fixed": "#3f0016",          "on-primary": "#ffffff",          "on-tertiary-fixed-variant": "#8a143c",          "on-tertiary": "#ffffff",          "on-secondary-container": "#684000",          "tertiary-fixed": "#ffd9de",          "on-secondary-fixed-variant": "#653e00",          "on-background": "#191c1e",          "on-primary-fixed-variant": "#005320",          "surface-container-lowest": "#ffffff",          "surface-container": "#eceef0",          "on-secondary-fixed": "#2a1700",          "inverse-surface": "#2d3133",          "secondary-container": "#fea619",          "secondary-fixed": "#ffddb8",          "tertiary-fixed-dim": "#ffb2bf",          "surface-dim": "#d8dadc",          "surface-container-low": "#f2f4f6",          "surface-bright": "#f7f9fb",          "primary-fixed": "#7ffc97",          "primary-container": "#00873a",          "on-primary-fixed": "#002109",          "surface-container-highest": "#e0e3e5",          "on-secondary": "#ffffff",          "outline-variant": "#bdcaba",          "on-error-container": "#93000a",          "surface-tint": "#006e2d",          "background": "#f7f9fb",          "primary-fixed-dim": "#62df7d",          "on-primary-container": "#f7fff2",          "tertiary": "#a72d51",          "on-tertiary-container": "#fffbff",          "primary": "#006b2c",          "error": "#ba1a1a",          "surface-variant": "#e0e3e5",          "inverse-on-surface": "#eff1f3",          "inverse-primary": "#62df7d",          "on-surface": "#191c1e",          "error-container": "#ffdad6",          "surface": "#f7f9fb",          "on-surface-variant": "#3e4a3d",          "surface-container-high": "#e6e8ea",          "secondary-fixed-dim": "#ffb95f",          "on-error": "#ffffff",          "tertiary-container": "#c74668",          "outline": "#6e7b6c"        },        "borderRadius": {          "DEFAULT": "0.25rem",          "lg": "0.5rem",          "xl": "0.75rem",          "full": "9999px"        },        "spacing": {          "unit-6": "24px",          "unit-2": "8px",          "gutter-tablet": "16px",          "gutter-mobile": "12px",          "unit-1": "4px",          "unit-8": "32px",          "margin-mobile": "16px",          "unit-4": "16px",          "layout-max-width": "1280px",          "unit-3": "12px",          "margin-desktop": "32px",          "gutter-desktop": "24px"        },        "fontFamily": {          "headline-md": ["Plus Jakarta Sans"],          "body-lg": ["Plus Jakarta Sans"],          "label-md": ["Plus Jakarta Sans"],          "headline-lg": ["Plus Jakarta Sans"],          "label-sm": ["Plus Jakarta Sans"],          "headline-sm": ["Plus Jakarta Sans"],          "body-md": ["Plus Jakarta Sans"],          "body-sm": ["Plus Jakarta Sans"],          "label-lg": ["Plus Jakarta Sans"]        },        "fontSize": {          "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }],          "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],          "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],          "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],          "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "700" }],          "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }],          "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],          "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],          "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }]        }      }    }  }</script><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col pt-6 pb-8 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="px-6 mb-8 flex items-center gap-3"><img alt="Minimalist fresh green grocery shopping bag and leaf icon, modern retail branding, flat vector style. Design context: - Primary color: #16a34a - Font: plusJakartaSans - Mode: light - Roundness: rounded-md . The logo should be visually consistent with these brand tokens." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQMXnFvRRUVlkvURaIxcqnHqgf6Noc_0TSX98pjgdgvFniGjzvap5wKKMbGLLwohISR-GUETUX264XQv_vy7ys1i9wlP7orCcCDPlPRCkg9umVtKi5wq-_4RE33iBjPTNAKhnFzmESaSv4_YLyyhSpeW6jDcVZZzjwK4ve2x2hH1jPadjGELJgu139k3dy7mVrclBHiI5VtGfa8IqNwVt-kiEdTV35E2_O4j6I_CISPAushMmgekxIug"/><span class="text-headline-sm font-headline-sm text-primary tracking-tight">BasketFresh</span></div><nav class="flex-1 px-4 space-y-1 overflow-y-auto" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">dashboard</span>Dashboard</a><a class="flex items-center px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="orders" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">orders</span>Orders</a><a aria-current="page" class="flex items-center px-4 py-2.5 transition-all bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="products" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">inventory_2</span>Products</a><a class="flex items-center px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="categories" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">category</span>Categories</a><a class="flex items-center px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="inventory" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">warehouse</span>Inventory</a><a class="flex items-center px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="customers" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">group</span>Customers</a><a class="flex items-center px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="coupons" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">local_offer</span>Coupons</a><a class="flex items-center px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="offers" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">bolt</span>Offers</a><a class="flex items-center px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="reviews" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">rate_review</span>Reviews</a><a class="flex items-center px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="notifications" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">notifications</span>Notifications</a><a class="flex items-center px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="analytics" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">analytics</span>Analytics</a><a class="flex items-center px-4 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined mr-3 text-[20px]">settings</span>Settings</a></nav></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-8"><div class="flex items-center gap-4 flex-1 max-w-md"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-[20px]">search</span><input class="w-full bg-surface-container-low pl-10 pr-4 py-2 rounded-lg text-body-md text-on-surface outline-none border border-outline-variant/30 focus:border-primary transition-all" placeholder="Search orders, products, customers..." type="text"/></div></div><div class="flex items-center gap-4"><button class="p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-full transition-all relative"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-error rounded-full"></span></button><button class="p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-full transition-all"><span class="material-symbols-outlined text-[22px]">add_box</span></button><div class="flex items-center gap-3 pl-4 border-l border-outline-variant/30"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden md:block"><div class="text-label-lg text-on-surface">Admin User</div><div class="text-label-sm text-on-surface-variant">Store Manager</div></div></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full pb-16">
+<!-- Top Banner / Delivery context -->
+<div class="px-8 py-6 bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="text-label-sm text-primary uppercase tracking-widest bg-primary-container/20 px-2 py-0.5 rounded">Inventory Hub</span>
+<span class="text-body-sm text-on-surface-variant">• Updated 5m ago</span>
+</div>
+<h1 class="text-headline-lg font-headline-lg text-on-surface">Products Management</h1>
+<p class="text-body-md text-on-surface-variant mt-1">Manage catalog, pricing, perishables expiry, and stock levels across warehouses.</p>
+</div>
+<div class="flex items-center gap-3">
+<button class="px-4 py-2.5 bg-surface-container-high hover:bg-surface-dim text-on-surface text-label-lg rounded-lg transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">file_upload</span>
+        Import CSV
+      </button>
+<button class="px-5 py-2.5 bg-primary hover:bg-primary/90 text-on-primary text-label-lg rounded-lg shadow-sm transition-all flex items-center gap-2" onclick="document.getElementById('addProductModal').classList.remove('hidden')">
+<span class="material-symbols-outlined text-[20px]">add</span>
+        Add Product
+      </button>
+</div>
+</div>
+<!-- Metric Summary Cards -->
+<div class="px-8 mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="bg-surface-container-low p-6 rounded-xl relative overflow-hidden shadow-sm">
+<div class="flex items-center justify-between mb-4">
+<div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined">inventory_2</span>
+</div>
+<span class="text-label-sm font-label-sm bg-primary-container/30 text-primary px-2 py-1 rounded-full">+4.2% this week</span>
+</div>
+<div class="text-headline-md text-on-surface">1,428</div>
+<div class="text-body-sm text-on-surface-variant mt-1">Total Active SKUs</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl relative overflow-hidden shadow-sm">
+<div class="flex items-center justify-between mb-4">
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined">warning</span>
+</div>
+<span class="text-label-sm font-label-sm bg-error-container text-on-error-container px-2 py-1 rounded-full">Action Req</span>
+</div>
+<div class="text-headline-md text-on-surface">38</div>
+<div class="text-body-sm text-on-surface-variant mt-1">Low Stock / Reorder</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl relative overflow-hidden shadow-sm">
+<div class="flex items-center justify-between mb-4">
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+<span class="text-label-sm font-label-sm bg-tertiary-fixed text-on-tertiary-fixed-variant px-2 py-1 rounded-full">Perishables</span>
+</div>
+<div class="text-headline-md text-on-surface">12</div>
+<div class="text-body-sm text-on-surface-variant mt-1">Expiring &lt; 48 hrs</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl relative overflow-hidden shadow-sm">
+<div class="flex items-center justify-between mb-4">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined">local_offer</span>
+</div>
+<span class="text-label-sm font-label-sm bg-surface-container text-on-surface px-2 py-1 rounded-full">Active Promos</span>
+</div>
+<div class="text-headline-md text-on-surface">154</div>
+<div class="text-body-sm text-on-surface-variant mt-1">Discounted Items</div>
+</div>
+</div>
+<!-- Main Table Section -->
+<div class="px-8 mt-8">
+<div class="bg-surface-container-low rounded-xl shadow-sm overflow-hidden">
+<!-- Toolbar & Filters -->
+<div class="p-4 sm:p-6 bg-surface-container-low flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4">
+<div class="flex flex-wrap items-center gap-3 flex-1">
+<div class="relative min-w-[260px] flex-1">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-[20px]">search</span>
+<input class="w-full bg-surface pl-10 pr-4 py-2 rounded-lg text-body-md text-on-surface outline-none border border-outline-variant/30 focus:border-primary transition-all" placeholder="Search product name, brand, SKU..." type="text"/>
+</div>
+<select class="bg-surface text-on-surface text-body-md px-4 py-2 rounded-lg border border-outline-variant/30 outline-none focus:border-primary">
+<option>All Categories</option>
+<option>Organic Fruits</option>
+<option>Fresh Vegetables</option>
+<option>Dairy &amp; Bakery</option>
+<option>Beverages</option>
+</select>
+<select class="bg-surface text-on-surface text-body-md px-4 py-2 rounded-lg border border-outline-variant/30 outline-none focus:border-primary">
+<option>Stock Status: All</option>
+<option>In Stock</option>
+<option>Low Stock (&lt; 20)</option>
+<option>Out of Stock</option>
+</select>
+<select class="bg-surface text-on-surface text-body-md px-4 py-2 rounded-lg border border-outline-variant/30 outline-none focus:border-primary">
+<option>Status: All</option>
+<option>Active</option>
+<option>Draft</option>
+<option>Archived</option>
+</select>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-2 bg-surface hover:bg-surface-container-high text-on-surface rounded-lg border border-outline-variant/30 transition-all">
+<span class="material-symbols-outlined text-[20px]">filter_list</span>
+</button>
+<button class="p-2 bg-surface hover:bg-surface-container-high text-on-surface rounded-lg border border-outline-variant/30 transition-all">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+</div>
+</div>
+<!-- Bulk Actions Bar (Conditional appearance mock) -->
+<div class="hidden px-6 py-3 bg-primary-container text-on-primary-container flex items-center justify-between" id="bulkActionBar">
+<div class="flex items-center gap-3">
+<span class="font-bold text-label-lg">24 products selected</span>
+<span class="text-body-sm opacity-85">|</span>
+<button class="text-label-lg underline hover:opacity-80">Deselect all</button>
+</div>
+<div class="flex items-center gap-3">
+<button class="px-3 py-1.5 bg-surface text-on-surface rounded text-label-md hover:bg-surface-bright transition-all">Update Price</button>
+<button class="px-3 py-1.5 bg-surface text-on-surface rounded text-label-md hover:bg-surface-bright transition-all">Mark Active</button>
+<button class="px-3 py-1.5 bg-error text-on-error rounded text-label-md hover:opacity-90 transition-all">Delete Selected</button>
+</div>
+</div>
+<!-- Data Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant text-label-md border-b border-outline-variant/20">
+<th class="p-4 w-12 text-center">
+<input class="rounded accent-primary" id="selectAllCheckbox" onchange="toggleSelectAll(this)" type="checkbox"/>
+</th>
+<th class="p-4">Product</th>
+<th class="p-4">Category / Brand</th>
+<th class="p-4">Price (MRP)</th>
+<th class="p-4">Stock &amp; Expiry</th>
+<th class="p-4">Status</th>
+<th class="p-4 text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/10 text-body-md text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container/50 transition-all group">
+<td class="p-4 text-center">
+<input class="product-checkbox rounded accent-primary" type="checkbox"/>
+</td>
+<td class="p-4">
+<div class="flex items-center gap-3">
+<img class="w-12 h-12 object-cover rounded-lg border border-outline-variant/30 flex-shrink-0" data-alt="Fresh organic Alphonso mangoes arranged neatly in a woven basket, vibrant orange-yellow skin, high-end grocery photography, natural daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcKd7aYxp6_9OHzwoOUAzUteOBnIsbgC4WM_H2qpEypQOk77p4INPFaskdJGpiRZ4AXGXLIzSa5DioAFj_XVfcSHleIAhTeGBe-mav1WS7EIfG-cEQSGWAkRAuqAB8foNWWdCjntsXc9zeHq-cNOq02zux1st73avRG0EA_WnLrA_RgmsiCj09vePrqsnyNVuVhYaz72r9_PHwKiVeTYCYHeFm86pKQuAJrrsYu-n_L4UBjiEjM4AWvQ"/>
+<div>
+<div class="font-bold text-on-surface hover:text-primary cursor-pointer">Organic Alphonso Mangoes (1kg)</div>
+<div class="text-body-sm text-on-surface-variant">SKU: GRO-MAN-019</div>
+</div>
+</div>
+</td>
+<td class="p-4">
+<div class="text-label-lg">Organic Fruits</div>
+<div class="text-body-sm text-on-surface-variant">Ratnagiri Farms</div>
+</td>
+<td class="p-4">
+<div class="font-bold text-on-surface">₹450</div>
+<div class="text-body-sm text-outline line-through">₹599</div>
+<span class="text-label-sm text-primary bg-primary-container/20 px-1.5 py-0.5 rounded">25% OFF</span>
+</td>
+<td class="p-4">
+<div class="flex items-center gap-2">
+<span class="font-bold text-on-surface">142 units</span>
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+</div>
+<div class="text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px] text-tertiary">schedule</span>
+                  Exp: 3 days (Perishable)
+                </div>
+</td>
+<td class="p-4">
+<span class="px-2.5 py-1 bg-primary-container/30 text-primary text-label-sm rounded-full font-semibold">Active</span>
+</td>
+<td class="p-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 hover:bg-surface-container-high rounded text-on-surface-variant hover:text-on-surface transition-all" title="Edit">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 hover:bg-surface-container-high rounded text-on-surface-variant hover:text-on-surface transition-all" title="Duplicate">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+<button class="p-1.5 hover:bg-surface-container-high rounded text-on-surface-variant hover:text-on-surface transition-all" title="Archive">
+<span class="material-symbols-outlined text-[18px]">archive</span>
+</button>
+<button class="p-1.5 hover:bg-error-container rounded text-error transition-all" title="Delete">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 - Low Stock Warning -->
+<tr class="hover:bg-surface-container/50 transition-all group">
+<td class="p-4 text-center">
+<input class="product-checkbox rounded accent-primary" type="checkbox"/>
+</td>
+<td class="p-4">
+<div class="flex items-center gap-3">
+<img class="w-12 h-12 object-cover rounded-lg border border-outline-variant/30 flex-shrink-0" data-alt="Crisp farm-fresh organic spinach leaves in biodegradable packaging, bright green leaves, water droplets, minimal grocery store aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5zNKQAevQuzHwx1u_UR9J5zg-BetfggXWwk9Gl1YoinWP7CkmZNSJ67bCdxgYJD-MBhN5k3KNv-Clqfxt0KRwNH6wIdkpHW1prNK9yMYzMexf2aw5EZKeo_zuDUTJHXzKkjSjB4LMsMtJoRDQIpjDpz-KDQnfkBQPPi0m998tNbQgaK7qmKkeGarPLf4kxIWIvVg2ylTO6e2lEK3oONUW9xHTlAFrW_0ELItvNiP2y8E6Y9IMWlj36A"/>
+<div>
+<div class="font-bold text-on-surface hover:text-primary cursor-pointer">Baby Spinach Leaves (250g)</div>
+<div class="text-body-sm text-on-surface-variant">SKU: VEG-SPN-042</div>
+</div>
+</div>
+</td>
+<td class="p-4">
+<div class="text-label-lg">Fresh Vegetables</div>
+<div class="text-body-sm text-on-surface-variant">GreenValley Organics</div>
+</td>
+<td class="p-4">
+<div class="font-bold text-on-surface">₹65</div>
+<div class="text-body-sm text-outline line-through">₹80</div>
+<span class="text-label-sm text-primary bg-primary-container/20 px-1.5 py-0.5 rounded">18% OFF</span>
+</td>
+<td class="p-4">
+<div class="flex items-center gap-2">
+<span class="font-bold text-error">8 units</span>
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
+</div>
+<div class="text-body-sm text-error flex items-center gap-1 mt-0.5 font-semibold">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+                  Low stock alert
+                </div>
+</td>
+<td class="p-4">
+<span class="px-2.5 py-1 bg-primary-container/30 text-primary text-label-sm rounded-full font-semibold">Active</span>
+</td>
+<td class="p-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 hover:bg-surface-container-high rounded text-on-surface-variant hover:text-on-surface transition-all" title="Edit">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 hover:bg-surface-container-high rounded text-on-surface-variant hover:text-on-surface transition-all" title="Duplicate">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+<button class="p-1.5 hover:bg-surface-container-high rounded text-on-surface-variant hover:text-on-surface transition-all" title="Archive">
+<span class="material-symbols-outlined text-[18px]">archive</span>
+</button>
+<button class="p-1.5 hover:bg-error-container rounded text-error transition-all" title="Delete">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 - Draft status -->
+<tr class="hover:bg-surface-container/50 transition-all group">
+<td class="p-4 text-center">
+<input class="product-checkbox rounded accent-primary" type="checkbox"/>
+</td>
+<td class="p-4">
+<div class="flex items-center gap-3">
+<img class="w-12 h-12 object-cover rounded-lg border border-outline-variant/30 flex-shrink-0" data-alt="Artisanal sourdough bread loaf with a crispy floured crust on a wooden board, warm golden brown lighting, boutique bakery style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUznZ-Z-hSR2-fcQZ8dwhmMaqWfT3C8q3aoFikgy6th1t9RAUE5CmLPt0PblfVQenNt4d28-2agh1WRlGbMlVvSXh8rvFQ3c7CYOspyORdpSG9BHiOdkLgIrt0gV5rRCx_091GJazb8EYtRKVK78mNBeS0_ZWmBoBGUR7G7YgFqVd4VmS0Ccp_xOJBNVx6v5oYOi6e5UpUZ3AFO2OddZidQZOe0WAMpe68W-Q60ZnYVWRSmV403dWLIQ"/>
+<div>
+<div class="font-bold text-on-surface hover:text-primary cursor-pointer">Artisanal Sourdough Bread (500g)</div>
+<div class="text-body-sm text-on-surface-variant">SKU: BAK-SUR-102</div>
+</div>
+</div>
+</td>
+<td class="p-4">
+<div class="text-label-lg">Dairy &amp; Bakery</div>
+<div class="text-body-sm text-on-surface-variant">DailyBread Co.</div>
+</td>
+<td class="p-4">
+<div class="font-bold text-on-surface">₹180</div>
+<div class="text-body-sm text-outline line-through">₹210</div>
+<span class="text-label-sm text-primary bg-primary-container/20 px-1.5 py-0.5 rounded">14% OFF</span>
+</td>
+<td class="p-4">
+<div class="flex items-center gap-2">
+<span class="font-bold text-on-surface">0 units</span>
+</div>
+<div class="text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+                  Exp: 1 day (Perishable)
+                </div>
+</td>
+<td class="p-4">
+<span class="px-2.5 py-1 bg-surface-container-highest text-on-surface-variant text-label-sm rounded-full font-semibold">Draft</span>
+</td>
+<td class="p-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 hover:bg-surface-container-high rounded text-on-surface-variant hover:text-on-surface transition-all" title="Edit">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 hover:bg-surface-container-high rounded text-on-surface-variant hover:text-on-surface transition-all" title="Duplicate">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+<button class="p-1.5 hover:bg-surface-container-high rounded text-on-surface-variant hover:text-on-surface transition-all" title="Archive">
+<span class="material-symbols-outlined text-[18px]">archive</span>
+</button>
+<button class="p-1.5 hover:bg-error-container rounded text-error transition-all" title="Delete">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 - Standard item -->
+<tr class="hover:bg-surface-container/50 transition-all group">
+<td class="p-4 text-center">
+<input class="product-checkbox rounded accent-primary" type="checkbox"/>
+</td>
+<td class="p-4">
+<div class="flex items-center gap-3">
+<img class="w-12 h-12 object-cover rounded-lg border border-outline-variant/30 flex-shrink-0" data-alt="Glass bottle of pure cold-pressed coconut oil with tropical green coconut leaves in the background, clean natural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDftpYPTRBrtwmVkpWtAAsPlQ8d7_8NtaP8dKpu8O3u8LLNFfaXAw5MT7RyNGYkgwErQaLBq_rs2XbH6h5aDBpaCKjqUp5mukVTCnFI4aHW9LUcZdKn2rwnBLp9TmWho_yeC2ohmPLj0lTCwnusNUMUUfY3MonXgT3M3nMov8BdL8ZmaqyL6O9DjXLAaM06bLKYI6r-f8nCvARIfo88eOPzCPbGlLgllsLntD-_SYshMQ73Z662gW8Nfg"/>
+<div>
+<div class="font-bold text-on-surface hover:text-primary cursor-pointer">Cold Pressed Virgin Coconut Oil (500ml)</div>
+<div class="text-body-sm text-on-surface-variant">SKU: OIL-VCO-008</div>
+</div>
+</div>
+</td>
+<td class="p-4">
+<div class="text-label-lg">Pantry Essentials</div>
+<div class="text-body-sm text-on-surface-variant">Kerala Organics</div>
+</td>
+<td class="p-4">
+<div class="font-bold text-on-surface">₹399</div>
+<div class="text-body-sm text-outline line-through">₹499</div>
+<span class="text-label-sm text-primary bg-primary-container/20 px-1.5 py-0.5 rounded">20% OFF</span>
+</td>
+<td class="p-4">
+<div class="flex items-center gap-2">
+<span class="font-bold text-on-surface">310 units</span>
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+</div>
+<div class="text-body-sm text-on-surface-variant mt-0.5">
+                  Non-perishable
+                </div>
+</td>
+<td class="p-4">
+<span class="px-2.5 py-1 bg-primary-container/30 text-primary text-label-sm rounded-full font-semibold">Active</span>
+</td>
+<td class="p-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 hover:bg-surface-container-high rounded text-on-surface-variant hover:text-on-surface transition-all" title="Edit">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 hover:bg-surface-container-high rounded text-on-surface-variant hover:text-on-surface transition-all" title="Duplicate">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+<button class="p-1.5 hover:bg-surface-container-high rounded text-on-surface-variant hover:text-on-surface transition-all" title="Archive">
+<span class="material-symbols-outlined text-[18px]">archive</span>
+</button>
+<button class="p-1.5 hover:bg-error-container rounded text-error transition-all" title="Delete">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination Footer -->
+<div class="p-4 sm:p-6 bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-outline-variant/10">
+<div class="text-body-sm text-on-surface-variant">
+          Showing <span class="font-bold text-on-surface">1 to 4</span> of <span class="font-bold text-on-surface">1,428</span> products
+        </div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 bg-surface text-on-surface rounded-lg border border-outline-variant/30 text-body-sm hover:bg-surface-container-high disabled:opacity-50" disabled="">Previous</button>
+<button class="px-3 py-1.5 bg-primary text-on-primary rounded-lg text-body-sm font-semibold">1</button>
+<button class="px-3 py-1.5 bg-surface text-on-surface rounded-lg border border-outline-variant/30 text-body-sm hover:bg-surface-container-high">2</button>
+<button class="px-3 py-1.5 bg-surface text-on-surface rounded-lg border border-outline-variant/30 text-body-sm hover:bg-surface-container-high">3</button>
+<span class="text-outline">...</span>
+<button class="px-3 py-1.5 bg-surface text-on-surface rounded-lg border border-outline-variant/30 text-body-sm hover:bg-surface-container-high">357</button>
+<button class="px-3 py-1.5 bg-surface text-on-surface rounded-lg border border-outline-variant/30 text-body-sm hover:bg-surface-container-high">Next</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Add Product Modal (Hidden by default) -->
+<div class="fixed inset-0 bg-inverse-surface/50 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden" id="addProductModal">
+<div class="bg-surface-container-low w-full max-w-2xl rounded-2xl shadow-xl overflow-hidden animate-in fade-in zoom-in duration-200">
+<div class="px-6 py-4 bg-primary text-on-primary flex items-center justify-between">
+<h2 class="text-headline-sm font-headline-sm">Add New Product</h2>
+<button class="p-1 hover:bg-primary-container rounded-full text-on-primary transition-all" onclick="document.getElementById('addProductModal').classList.add('hidden')">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="p-6 space-y-4 max-h-[80vh] overflow-y-auto">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-label-md text-on-surface-variant mb-1">Product Name</label>
+<input class="w-full bg-surface px-4 py-2 rounded-lg border border-outline-variant/30 outline-none focus:border-primary" placeholder="e.g. Organic Hass Avocado" type="text"/>
+</div>
+<div>
+<label class="block text-label-md text-on-surface-variant mb-1">SKU Code</label>
+<input class="w-full bg-surface px-4 py-2 rounded-lg border border-outline-variant/30 outline-none focus:border-primary" placeholder="e.g. GRO-AVO-012" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-label-md text-on-surface-variant mb-1">Category</label>
+<select class="w-full bg-surface px-4 py-2 rounded-lg border border-outline-variant/30 outline-none focus:border-primary">
+<option>Organic Fruits</option>
+<option>Fresh Vegetables</option>
+<option>Dairy &amp; Bakery</option>
+<option>Pantry Essentials</option>
+</select>
+</div>
+<div>
+<label class="block text-label-md text-on-surface-variant mb-1">Brand Name</label>
+<input class="w-full bg-surface px-4 py-2 rounded-lg border border-outline-variant/30 outline-none focus:border-primary" placeholder="e.g. FarmFresh Direct" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+<div>
+<label class="block text-label-md text-on-surface-variant mb-1">Selling Price (INR)</label>
+<input class="w-full bg-surface px-4 py-2 rounded-lg border border-outline-variant/30 outline-none focus:border-primary" placeholder="₹ 0.00" type="number"/>
+</div>
+<div>
+<label class="block text-label-md text-on-surface-variant mb-1">MRP (INR)</label>
+<input class="w-full bg-surface px-4 py-2 rounded-lg border border-outline-variant/30 outline-none focus:border-primary" placeholder="₹ 0.00" type="number"/>
+</div>
+<div>
+<label class="block text-label-md text-on-surface-variant mb-1">Initial Stock Qty</label>
+<input class="w-full bg-surface px-4 py-2 rounded-lg border border-outline-variant/30 outline-none focus:border-primary" placeholder="100" type="number"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-label-md text-on-surface-variant mb-1">Expiry Date (For Perishables)</label>
+<input class="w-full bg-surface px-4 py-2 rounded-lg border border-outline-variant/30 outline-none focus:border-primary" type="date"/>
+</div>
+<div>
+<label class="block text-label-md text-on-surface-variant mb-1">Publish Status</label>
+<select class="w-full bg-surface px-4 py-2 rounded-lg border border-outline-variant/30 outline-none focus:border-primary">
+<option>Active</option>
+<option>Draft</option>
+<option>Archived</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block text-label-md text-on-surface-variant mb-1">Product Image Thumbnail</label>
+<div class="border-2 border-dashed border-outline-variant/40 rounded-xl p-6 text-center bg-surface cursor-pointer hover:border-primary transition-all">
+<span class="material-symbols-outlined text-[36px] text-outline mb-2">cloud_upload</span>
+<div class="text-label-lg text-on-surface">Click to upload or drag &amp; drop</div>
+<div class="text-body-sm text-on-surface-variant mt-1">SVG, PNG, JPG or WEBP (max. 800x800px)</div>
+</div>
+</div>
+</div>
+<div class="px-6 py-4 bg-surface-container flex items-center justify-end gap-3">
+<button class="px-4 py-2 bg-surface hover:bg-surface-container-high text-on-surface text-label-lg rounded-lg border border-outline-variant/30 transition-all" onclick="document.getElementById('addProductModal').classList.add('hidden')">Cancel</button>
+<button class="px-5 py-2 bg-primary hover:bg-primary/90 text-on-primary text-label-lg rounded-lg shadow-sm transition-all" onclick="document.getElementById('addProductModal').classList.add('hidden')">Save Product</button>
+</div>
+</div>
+</div>
+<script>
+    function toggleSelectAll(master) {
+      const checkboxes = document.querySelectorAll('.product-checkbox');
+      const bulkBar = document.getElementById('bulkActionBar');
+      checkboxes.forEach(cb => cb.checked = master.checked);
+      if(master.checked) {
+        bulkBar.classList.remove('hidden');
+      } else {
+        bulkBar.classList.add('hidden');
+      }
+    }
+
+    document.querySelectorAll('.product-checkbox').forEach(cb => {
+      cb.addEventListener('change', () => {
+        const checkedCount = document.querySelectorAll('.product-checkbox:checked').length;
+        const bulkBar = document.getElementById('bulkActionBar');
+        if(checkedCount > 0) {
+          bulkBar.classList.remove('hidden');
+        } else {
+          bulkBar.classList.add('hidden');
+        }
+      });
+    });
+  </script>
+</div></main></div></body></html>
